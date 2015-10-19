@@ -33,6 +33,11 @@ class StackTests: QuickSpec {
                 stack.lowerContainer()
                 expect(craneWrapper.isLowerContainerCalled()).to(beTrue())
             }
+            
+            it("should be empty")
+            {
+                expect(stack.isEmpty()).to(beTrue())
+            }
         }
     }
 }
