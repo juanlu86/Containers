@@ -10,5 +10,9 @@ public class Stack {
     func raiseContainer(){
         craneWrapper.raiseContainer()
     }
-
+    
+    func lowerContainer(){
+        craneWrapper.lowerContainer()
+    }
+    
 }

@@ -9,4 +9,8 @@ public class CraneWrapper
     func raiseContainer() {
 
     }
+    
+    func lowerContainer() {
+        
+    }
 }

@@ -3,19 +3,22 @@ import Nimble
 @testable import Containers
 
 class StackTests: QuickSpec {
-
+    
     override func spec() {
 
-        describe("stack") {
+        describe("stack")
+        {
             
             let craneWrapper = MockCraneWrapper()
             var stack: Stack!
 
-            beforeEach {
+            beforeEach
+            {
                 stack = Stack(craneWrapper: craneWrapper)
             }
 
-            it("can be created") {
+            it("can be created")
+            {
                 expect(stack).toNot(beNil())
             }
 
@@ -24,7 +27,12 @@ class StackTests: QuickSpec {
                 stack.raiseContainer()
                 expect(craneWrapper.isRaiseContainerCalled()).to(beTrue())
             }
-
+            
+            it("should lower a container")
+            {
+                stack.lowerContainer()
+                expect(craneWrapper.isLowerContainerCalled()).to(beTrue())
+            }
         }
     }
 }
