@@ -2,7 +2,8 @@ import Foundation
 
 public class Stack {
     var craneWrapper: CraneWrapper
-
+    var containers: [Container] = []
+    
     public init(craneWrapper: CraneWrapper) {
         self.craneWrapper = craneWrapper
     }
@@ -17,10 +18,10 @@ public class Stack {
     
     func addContainer(container: Container)
     {
-        
+        containers.append(container)
     }
 
     func isEmpty () -> Bool {
-        return true
+        return containers.count == 0
     }
 }

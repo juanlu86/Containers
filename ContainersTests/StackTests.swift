@@ -39,13 +39,17 @@ class StackTests: QuickSpec {
                 expect(stack.isEmpty()).to(beTrue())
             }
             
-            
             it("should add a cool container")
             {
                 let coolContainer = CoolContainer()
                 stack.addContainer(coolContainer)
             }
             
+            it("should not be empty if it contains one cool container")
+            {
+                stack.addContainer(CoolContainer())
+                expect(stack.isEmpty()).to(beFalse())
+            }
             
         }
     }
