@@ -16,6 +16,8 @@
 		5CC458CC1BCFD781000A550F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC458CA1BCFD781000A550F /* LaunchScreen.storyboard */; };
 		5CC458D71BCFD781000A550F /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC458D61BCFD781000A550F /* StackTests.swift */; };
 		6F75C4F700F4D5EE934459B6 /* Pods_ContainersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A64240797CD95F1AEE71B09 /* Pods_ContainersTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		87D1E0EB1BD55C860096DEF8 /* MockCraneWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D1E0EA1BD55C860096DEF8 /* MockCraneWrapper.swift */; settings = {ASSET_TAGS = (); }; };
+		B7E7064AE2BDE8B8E1E8D20E /* CraneWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E70ACB18AB98FCBC2E936E /* CraneWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,9 @@
 		5CC458D21BCFD781000A550F /* ContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC458D61BCFD781000A550F /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		5CC458D81BCFD781000A550F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D1E0EA1BD55C860096DEF8 /* MockCraneWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCraneWrapper.swift; sourceTree = "<group>"; };
 		93F67D946944ABBB4106F64A /* Pods-ContainersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContainersTests/Pods-ContainersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7E70ACB18AB98FCBC2E936E /* CraneWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CraneWrapper.swift; sourceTree = "<group>"; };
 		C54B5A059AEB0E72352C86AE /* Pods-ContainersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContainersTests/Pods-ContainersTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,7 @@
 				5CC209C11BD01E5E00551774 /* Crane.c */,
 				5CC209C21BD01E5E00551774 /* Crane.h */,
 				5CC209C01BD01E5E00551774 /* Containers-Bridging-Header.h */,
+				B7E70ACB18AB98FCBC2E936E /* CraneWrapper.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			children = (
 				5CC458D61BCFD781000A550F /* StackTests.swift */,
 				5CC458D81BCFD781000A550F /* Info.plist */,
+				87D1E0EA1BD55C860096DEF8 /* MockCraneWrapper.swift */,
 			);
 			path = ContainersTests;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 				5C3254EA1BD2EA15009126E4 /* Stack.swift in Sources */,
 				5CC209C31BD01E5E00551774 /* Crane.c in Sources */,
 				5CC458C21BCFD781000A550F /* AppDelegate.swift in Sources */,
+				B7E7064AE2BDE8B8E1E8D20E /* CraneWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC458D71BCFD781000A550F /* StackTests.swift in Sources */,
+				87D1E0EB1BD55C860096DEF8 /* MockCraneWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

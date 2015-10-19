@@ -1,15 +1,28 @@
 import Quick
 import Nimble
-import Containers
+@testable import Containers
 
 class StackTests: QuickSpec {
 
     override func spec() {
 
         describe("stack") {
+            
+            let craneWrapper = MockCraneWrapper()
+            var stack: Stack!
+
+            beforeEach {
+                stack = Stack(craneWrapper: craneWrapper)
+            }
 
             it("can be created") {
-                expect(Stack()).toNot(beNil())
+                expect(stack).toNot(beNil())
+            }
+
+            it("should raise a container")
+            {
+                stack.raiseContainer()
+                expect(craneWrapper.isRaiseContainerCalled()).to(beTrue())
             }
 
         }
