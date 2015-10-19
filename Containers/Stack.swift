@@ -14,6 +14,11 @@ public class Stack {
     func lowerContainer(){
         craneWrapper.lowerContainer()
     }
+    
+    func addContainer(container: Container)
+    {
+        
+    }
 
     func isEmpty () -> Bool {
         return true
