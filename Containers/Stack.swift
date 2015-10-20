@@ -24,4 +24,11 @@ public class Stack {
     func isEmpty () -> Bool {
         return containers.count == 0
     }
+    
+    func containerPosition (container: Container) -> Int? {
+        if let index = containers.indexOf(container) {
+            return index + 1
+        }
+        return nil
+    }
 }

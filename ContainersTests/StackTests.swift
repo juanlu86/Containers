@@ -51,6 +51,16 @@ class StackTests: QuickSpec {
                 expect(stack.isEmpty()).to(beFalse())
             }
             
+            it("should return the container position")
+            {
+                let coolContainer1 = CoolContainer()
+                let coolContainer2 = CoolContainer()
+                
+                stack.addContainer(coolContainer1)
+                stack.addContainer(coolContainer2)
+                
+                expect(stack.containerPosition(coolContainer2)).to(equal(2)) 
+            }
         }
     }
 }
